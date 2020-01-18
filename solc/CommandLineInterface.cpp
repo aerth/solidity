@@ -254,7 +254,7 @@ static set<string> const g_metadataHashArgs
 static void version()
 {
 	sout() <<
-		"solc, the solidity compiler commandline interface" <<
+		"aerth's solc, the solidity compiler commandline interface" <<
 		endl <<
 		"Version: " <<
 		dev::solidity::VersionString <<
