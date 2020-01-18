@@ -124,7 +124,7 @@ void Parser::parsePragmaVersion(SourceLocation const& _location, vector<Token> c
 	auto matchExpression = parser.parse();
 	static SemVerVersion const currentVersion{string(VersionString)};
 	// FIXME: only match for major version incompatibility
-	if (!matchExpression.matches(currentVersion))
+	if (false && !matchExpression.matches(currentVersion))
 		// If m_parserErrorRecovery is true, the same message will appear from SyntaxChecker::visit(),
 		// so we don't need to report anything here.
 		if (!m_parserErrorRecovery)
